@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Chihaya Jyun;
+}
+
+.catch {
+    display: flex;
+}
+
+.catch-left {
+    margin-left: 10%;
+    padding-top: 5%;
+}
+
+.catch-copy img {
+    width: 40%;
+    height: 40%;
+    margin: 0;
+}
+
+.catch-icon img{
+    padding-bottom: 20px;
+    width: 15%;
+    height: 15%;
+}
+
+.arc {
+    background-image: -webkit-gradient(
+                  linear
+                , left bottom
+                , right top
+                , from(#EE8788)
+                , color-stop(0.16, #EE898A)
+                , color-stop(0.20, #ED7D7E)
+                , color-stop(0.24, #EC7576)
+                , color-stop(0.28, #EC6D6E)
+                , color-stop(0.32, #EB6567)
+                , color-stop(0.36, #EB5E61)
+                , color-stop(0.40, #EA5558)
+                , color-stop(0.44, #EA5154)
+                , color-stop(0.48, #EA4F53)
+                , color-stop(0.52, #EA4D51)
+                , color-stop(0.56, #EA4B4F)
+                , color-stop(0.60, #EA494C)
+                , color-stop(0.64, #EA464A)
+                , color-stop(0.68, #E94548)
+                , color-stop(0.72, #E94246)
+                , color-stop(0.76, #E94045)
+                , color-stop(0.80, #E94347)
+                , color-stop(0.84, #E94044)
+                , color-stop(0.88, #E94045)
+                , color-stop(0.92, #E94041)
+                , color-stop(0.96, #E9403F)
+                , to(#E93F3C));
+                min-height: 790px;
+                border-bottom-right-radius: 700px 500px;
+                border-bottom-left-radius: 1200px 800px;
+                margin-left: -200px;
+                margin-right: -200px;
+                padding-left: 200px;
+                padding-right: 200px;
+}
+
+.wrap {
+overflow: hidden;
+}
+
+#selectionmain {
+  display: flex;
+}
+
+#leftcontents {
+  padding: 1.5% 0 5% 5%;
+  width: 35%;
+}
+
+#selectionmain #leftcontents img {
+  width: 20%;
+  margin: 2%;
+}
+
+#selectionmain #leftcontents h1 {
+  font-size: 35px;
+  color: #FA6161;
+}
+
+#leftcontents #selection {
+  display: block;
+  background-color: #EE8888;
+  padding: 5%;
+  border-radius: 20px;
+  margin: 5% 10% 5% 0;
+  box-shadow: 2px 2px 1px 1px #4A4A4A;
+}
+
+#leftcontents #selection select {
+  width: 90%;
+  height: 50px;
+  background-color: #EE8888;
+  color: #fff;
+  border-color: #EE8888;
+  font-size: 25px;
+  margin: 5%;
+  border-bottom:  #fff solid;
+}
+
+#leftcontents button {
+  width: 90%;
+  height: 60px;
+  color:#fff;
+  border-radius: 19px;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #FA6161;
+  box-shadow: 2px 2px 1px 1px #4A4A4A;
+  border-color: #FA6161;
+}
+
+#rightcontents {
+  width: 65%;
+}
+
+#rightcontents img {
+  width: 100%;
+}
+
+#result {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+#map {
+    width: 45%;
+    height: auto;
+}
+
+#spots-list {
+  display: block;
+  background-color: #EE8888;
+  padding: 5%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 1px 1px #4A4A4A;
+  width: 45%;
+}
+
+#spots-list li {
+  width: 90%;
+  height: 50px;
+  background-color: #EE8888;
+  color: #fff;
+  border-color: #EE8888;
+  font-size: 18px;
+  margin: 5%;
+  border-bottom:  #fff solid;
+}
+
+#spots-list li a {
+    color: #fff;
+}
