@@ -1,18 +1,5 @@
 <?php
-    define('DB_DATABASE', 'recotto');
-    define('DB_USERNAME', 'root');
-    define('DB_PASSWORD', 'recotto');
-    define('PDO_DSN', 'mysql:dbhost=localhost;dbname=' . DB_DATABASE);
-
-
-    try{
-        $db = new PDO(PDO_DSN, DB_USERNAME, DB_PASSWORD);
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    } catch (PDOException $e) {
-        echo $e->getMessage();
-        exit;
-    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -20,8 +7,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Recotto</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142556269-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142556269-1');
+    </script>
 </head>
 
 <body>
@@ -29,7 +25,7 @@
         <div id="leftcontents">
             <img src="images/lp_icon_pink.png">
             <h1>ようこそRecottoへ！</h1>
-            <form action="function.php" method="post" id="selection">
+            <form action="./function.php" method="post" id="selection">
                 <select id="area">
                     <option value="" disabled selected style='display:none;'>どこへ行くの？</option>
                     <option value="yokohama">横浜で</option>
@@ -44,7 +40,7 @@
                     <option value="halfday">半日くらい</option>
                     <option value="oneday">1日中</option>
                 </select>
-                <button id="btn">デートを見てみる！</button>
+                <button id="btn" onclick="ga('send', 'event', 'recotto','click', 'recotto',1 );">デートを見てみる！</button>
             </form>
         </div>
         <div id="rightcontents">
